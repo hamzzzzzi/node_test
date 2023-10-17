@@ -10,13 +10,13 @@ on:
 
 jobs:
   build:
-    runs-in: ubuntu-latest
-    
+    runs-on: ubuntu-latest
+
     #배열 변수 선언 - 파이썬, node같은 프로그래밍 언어는 여러 버전에서 동작
     strategy:
       matrix:
         node-version: [14.x]
-    
+
     #작업 수행
     #uses 는 다른 곳에서 만든 곳 이용
     steps:
