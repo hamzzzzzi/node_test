@@ -20,8 +20,8 @@ jobs:
     #작업 수행
     #uses 는 다른 곳에서 만든 곳 이용
     steps:
-      - uses: action/checkout@v2
-      - name: Use Node.js ${{ matrix.node-versioon }}
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{matrix.node-version}}
